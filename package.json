@@ -1,0 +1,22 @@
+{
+  "name": "react-all-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jochnickel/npm-react-all-player.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jochnickel/npm-react-all-player/issues"
+  },
+  "homepage": "https://github.com/Jochnickel/npm-react-all-player#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
+}
