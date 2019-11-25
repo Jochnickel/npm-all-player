@@ -2,7 +2,7 @@
   "name": "react-all-player",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Jochnickel/npm-react-all-player#readme",
   "devDependencies": {
+    "@iconify/icons-flat-color-icons": "^1.0.3",
+    "@iconify/react": "^1.1.1",
     "typescript": "^3.7.2"
   }
 }
