@@ -1,14 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AllPlayer from "./component/AllPlayer";
+import * as React from "react";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <AllPlayer/>
-        <img src={logo} className="App-logo" alt="logo" />
+        <AllPlayer url={"https://www.youtube.com/watch?v=zyzGRbbha3"}/>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -23,6 +21,6 @@ const App: React.FC = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
