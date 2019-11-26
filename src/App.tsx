@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <AllPlayer url={"https://www.youtube.com/watch?v=zyzGRbbha3"}/>
+        <AllPlayer url={"https://www.youtube.com/watch?v=zyzGRbbha3E"}/>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

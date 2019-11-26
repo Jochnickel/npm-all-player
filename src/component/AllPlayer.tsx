@@ -38,8 +38,9 @@ export default class AllPlayer extends React.Component<iProps> {
 	};
 
 	render() {
-		const plBtn = (this.state.state === 'pre') ? <SymbolFrame onClick={this.loadPlayer} symbol={"play"}/>
-					: (this.state.state === 'errorUrl') && <SymbolFrame symbol={"error"} msg={"Video URL not valid!"}/>;
+		const symbol = (this.state.state === 'pre') ? "loading" : (this.state.state === 'errorUrl') ? "error" : (this.state.state === 'urlGood') ? "play": "error";
+		console.log(this.state.state);
+		const plBtn = <SymbolFrame onClick={this.state.state==="urlGood" && this.loadPlayer} symbol={symbol} msg={this.state.msg}/>;
 		return (
 			<div>
 				{this.state.player}

@@ -2,9 +2,10 @@ import * as React from "react";
 import {Icon} from '@iconify/react';
 import playCircle from '@iconify/icons-ion/play-circle';
 import closeCircle from '@iconify/icons-ion/close-circle';
+import ellipsisHorizontalCircleSharp from '@iconify/icons-ion/ellipsis-horizontal-circle-sharp';
 
 interface iProps {
-	symbol: 'play' | 'error',
+	symbol: 'play' | 'error' | 'loading',
 	width?: number,
 	height?: number,
 	onClick?: any,
@@ -18,7 +19,8 @@ export default class SymbolFrame extends React.Component<iProps> {
 		const icon = (this.props.symbol === 'play')
 			? <Icon width={h * 0.2} icon={playCircle} style={{color: "yellowgreen"}}/>
 			: (this.props.symbol === 'error')
-			&& <Icon width={h * 0.2} icon={closeCircle} style={{color: "lightcoral"}}/>;
+				? <Icon width={h * 0.2} icon={closeCircle} style={{color: "lightcoral"}}/>
+				: <Icon width={h * 0.2} icon={ellipsisHorizontalCircleSharp} style={{color:"lightskyblue"}}/>;
 		const text = this.props.msg || "";
 		return (
 			<div onClick={this.props.onClick} style={{
